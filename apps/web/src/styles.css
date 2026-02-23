@@ -1,0 +1,44 @@
+body {
+  margin: 0;
+  font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Arial, "Apple Color Emoji", "Segoe UI Emoji";
+  background: #0b1020;
+  color: #e9ecf5;
+}
+a { color: #9db7ff; text-decoration: none; }
+a:hover { text-decoration: underline; }
+.container {
+  max-width: 980px;
+  margin: 0 auto;
+  padding: 28px 18px 60px;
+}
+.card {
+  background: rgba(255,255,255,0.06);
+  border: 1px solid rgba(255,255,255,0.10);
+  border-radius: 14px;
+  padding: 18px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.35);
+}
+.row { display: grid; grid-template-columns: 1fr 1fr; gap: 14px; }
+@media (max-width: 860px) { .row { grid-template-columns: 1fr; } }
+input, textarea {
+  width: 100%;
+  padding: 10px 12px;
+  border-radius: 10px;
+  border: 1px solid rgba(255,255,255,0.15);
+  background: rgba(0,0,0,0.25);
+  color: #e9ecf5;
+  outline: none;
+}
+button {
+  cursor: pointer;
+  padding: 10px 14px;
+  border-radius: 12px;
+  border: 1px solid rgba(255,255,255,0.18);
+  background: rgba(157,183,255,0.20);
+  color: #e9ecf5;
+  font-weight: 600;
+}
+button:hover { background: rgba(157,183,255,0.28); }
+.small { opacity: 0.85; font-size: 13px; }
+hr { border: 0; border-top: 1px solid rgba(255,255,255,0.12); margin: 16px 0; }
+.badge { display:inline-block; padding: 4px 10px; border-radius: 999px; background: rgba(0,0,0,0.25); border: 1px solid rgba(255,255,255,0.12); }

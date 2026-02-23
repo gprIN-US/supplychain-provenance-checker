@@ -1,0 +1,16 @@
+{
+  "name": "SupplyChainProvenanceLedger",
+  "private": true,
+  "workspaces": [
+    "packages/*",
+    "apps/*"
+  ],
+  "scripts": {
+    "pipeline:build": "npm --workspace packages/data-pipeline run build && node packages/data-pipeline/dist/cli.js build --csv data/DataCoSupplyChainDataset.csv",
+    "pipeline:verify": "node packages/data-pipeline/dist/cli.js verify",
+    "chain:node": "npm --workspace packages/contracts run node",
+    "chain:deploy:local": "npm --workspace packages/contracts run deploy:local",
+    "chain:anchor:local": "npm --workspace packages/contracts run anchor:local",
+    "web:dev": "npm --workspace apps/web run dev"
+  }
+}
