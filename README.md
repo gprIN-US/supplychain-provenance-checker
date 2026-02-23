@@ -59,7 +59,7 @@ data/DataCoSupplyChainDataset.csv
 
 On macOS, your current location looks like:
 
-`/Users/prernareddy/blockchain-supply-chain-project/data/DataCoSupplyChainDataset.csv`
+`/Users/user-name/blockchain-supply-chain-project/data/DataCoSupplyChainDataset.csv`
 
 You can either copy it into this repo's `data/` folder, or update paths in commands below using `--csv`.
 
